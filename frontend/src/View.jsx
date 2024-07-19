@@ -24,7 +24,7 @@ function View() {
   }, [id]);
 
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
+    <div className="d-flex vh-100 bg-light justify-content-center align-items-center">
       <div className="w-70 bg-white rounded p-3 ">
         {artist ? (
           <div>
@@ -62,8 +62,8 @@ function View() {
             </tbody>
           </table>
           <div>
-            <Link to={'/'} className="btn btn-primary">Back</Link>
-            <Link to={`/edit/${artist.Artist_ID}`}type="button" className="btn btn-danger">Edit</Link>
+            <Link to={'/'} className="btn btn-secondary">Back</Link>
+            <Link to={`/edit/${artist.Artist_ID}`}type="button" className="btn btn-info">Edit</Link>
           </div>
         </div>
         

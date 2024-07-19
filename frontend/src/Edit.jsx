@@ -7,13 +7,6 @@ function Edit() {
   const navigate = useNavigate();
   const { id } = useParams();
   const [artist, setArtist] = useState({
-    // Artist_ID: artist.Artist_ID,
-    // Artist_FirstName: artist.Artist_FirstName,
-    // Artist_LastName: artist.Artist_LastName,
-    // Artist_Email: artist.Artist_Email,
-    // Artist_Band_ID: artist.Artist_Band_ID,
-    // Artist_Contact_No: artist.Artist_Contact_No,
-    // Organizer_ID: artist.Organizer_ID,
     Artist_ID: "",
     Artist_FirstName: "",
     Artist_LastName: "",
@@ -63,8 +56,9 @@ function Edit() {
   };
 
   return (
-    <div className="d-flex vh-100 justify-content-center align-items-center bg-primary">
+    <div className="d-flex vh-100 justify-content-center align-items-center bg-light">
       <div className="w-50 bg-white rounded p-4">
+        <h2>Update Artist Details</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input

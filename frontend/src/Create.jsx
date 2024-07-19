@@ -30,7 +30,7 @@ function Create() {
     });
   };
   return (
-    <div className="d-flex vh-100 justify-content-center align-items-center bg-primary">
+    <div className="d-flex vh-100 justify-content-center align-items-center bg-light">
       <div className="w-50 bg-white rounded p-4">
         <form onSubmit={handleSubmit}>
           <div className="form-group">
