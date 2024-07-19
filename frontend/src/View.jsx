@@ -61,8 +61,8 @@ function View() {
               </tr>
             </tbody>
           </table>
-          <div>
-            <Link to={'/'} className="btn btn-secondary">Back</Link>
+          <div className="gap-1 mt-2">
+            <Link to={'/'} className="btn btn-secondary me-2">Back</Link>
             <Link to={`/edit/${artist.Artist_ID}`}type="button" className="btn btn-info">Edit</Link>
           </div>
         </div>

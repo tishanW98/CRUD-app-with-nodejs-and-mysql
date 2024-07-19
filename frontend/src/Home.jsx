@@ -61,26 +61,28 @@ function Home() {
                   <td>{artist.Artist_Contact_No}</td>
                   <td>{artist.Organizer_ID}</td>
                   <td>
-                    <Link
-                      to={`/view/${artist.Artist_ID}`}
-                      className="btn btn-sm btn-secondary"
-                    >
-                      View
-                    </Link>
-                    <Link 
-                      to={`/edit/${artist.Artist_ID}`}
-                      className="btn btn-sm btn-info"
-                    >
-                      Edit
-                    </Link>
-                    <button
-                      onClick={() => {
-                        handleDelete(artist.Artist_ID);
-                      }}
-                      className="btn btn-sm btn-danger"
-                    >
-                      Delete
-                    </button>
+                    <div className="gap-1">
+                      <Link
+                        to={`/view/${artist.Artist_ID}`}
+                        className="btn btn-sm btn-secondary me-2"
+                      >
+                        View
+                      </Link>
+                      <Link
+                        to={`/edit/${artist.Artist_ID}`}
+                        className="btn btn-sm btn-info me-2"
+                      >
+                        Edit
+                      </Link>
+                      <button
+                        onClick={() => {
+                          handleDelete(artist.Artist_ID);
+                        }}
+                        className="btn btn-sm btn-danger"
+                      >
+                        Delete
+                      </button>
+                    </div>
                   </td>
                 </tr>
               );

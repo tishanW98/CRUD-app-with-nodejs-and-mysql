@@ -28,7 +28,7 @@ db.connect((err) => {
 
 // Routes
 app.get("/", (req, res) => {
-  const sql = "SELECT * FROM music_event.artist";
+  const sql = "SELECT * FROM music_event.artist ORDER BY Artist_ID ASC";
   db.query(sql, (err, result) => {
     if (err) return res.status(500).json({ Message: "Error inside server" });
     return res.status(200).json(result);
